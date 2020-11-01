@@ -1,7 +1,7 @@
 from random import randint
-index = randint(0,999)
 with open("words.txt","r") as words:
     words_file = words.read().split("\n")
+index = randint(0,len(words_file))
 word = words_file[index]
 guess_list = []
 name = input("Enter your name: ")
